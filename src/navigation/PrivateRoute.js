@@ -33,6 +33,8 @@ export default class PrivateRoute extends React.Component {
     const { path, Component } = this.props;
     let token = Cookie.get("SESSION_ID");
     let hasToken = token ? true : false;
+    console.log(token);
+
     return (
       <Route
         path={path}
